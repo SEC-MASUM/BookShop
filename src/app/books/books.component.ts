@@ -15,17 +15,13 @@ export class BooksComponent implements OnInit {
   author2: string = 'David Thomas';
   src2: string = 'https://m.media-amazon.com/images/I/41HXiIojloL.jpg';
 
-  isDisabled: boolean = false;
+  isShowing: boolean = true;
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  handleClick() {
-    alert('Clicked');
-    console.log('clicked');
-    this.isDisabled = true;
+  toggleBook() {
+    this.isShowing = !this.isShowing;
   }
-
-  myName: string = '';
 }
