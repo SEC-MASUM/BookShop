@@ -1,0 +1,17 @@
+<h2>Programming Books List!</h2>
+<button (click)="handleClick()" [disabled]="isDisabled">Show Book</button>
+<input type="text" [(ngModel)]="myName" />
+<p>{{ myName }}</p>
+<ul>
+  <li>
+    <img [src]="src" [alt]="name" width="100px" />
+    {{ name }} by
+    {{ author }}
+  </li>
+
+  <li>
+    <img [src]="src2" [alt]="name" width="100px" />
+    {{ name2 }} by
+    {{ author2 }}
+  </li>
+</ul>
