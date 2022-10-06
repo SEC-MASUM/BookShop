@@ -1,0 +1,10 @@
+<p>book works!</p>
+<li class="book">
+  <img [src]="book.image" [alt]="book.name" width="100px" />
+  <p>
+    {{ book.name | uppercase }} by
+    {{ book.author }}
+  </p>
+  <p>{{ book.amount | currency: "BDT" }}</p>
+  <button (click)="handleClick()">Add to Cart</button>
+</li>
